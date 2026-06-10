@@ -38,8 +38,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy to production
-        uses: johnbeynon/render-deploy-action@v0.0.8
+        uses: JorgeLNJunior/render-deploy@v1.5.0
         with:
-          service-id: ${{ secrets.SERVICE_ID }}
-          api-key: ${{ secrets.RENDER_TOKEN }}
-          wait-for-success: true
+          service_id-id: ${{ secrets.SERVICE_ID }}
+          api_key: ${{ secrets.RENDER_TOKEN }}
+          wait_deploy: true
+  
