@@ -13,4 +13,6 @@ suite('Home page', function() {
     let body = await res.text();
     assert.ok(body.includes("Registered students: <b>2</b>"));
   });
+
 });
+
